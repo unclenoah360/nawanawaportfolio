@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hon. Nawa Nawa - UPND Aspiring Candidate for Matero 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        :root {
+            --upnd-red: #E31E24;
+            --upnd-green: #00853E;
+            --upnd-yellow: #FFD700;
+            --dark-bg: #0A0A0A;
+            --light-bg: #F5F5F5;
+            --text-light: #FFFFFF;
+            --text-dark: #333333;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 60px;
+            color: var(--upnd-yellow);
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 5px;
+            background: var(--upnd-red);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--upnd-red), #C00);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 3px solid var(--upnd-yellow);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(to right, #C00, var(--upnd-red));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(to right, var(--upnd-green), #00662B);
+            border-color: var(--upnd-yellow);
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(to right, #00662B, var(--upnd-green));
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, rgba(227, 30, 36, 0.95) 0%, rgba(139, 0, 0, 0.95) 100%);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid var(--upnd-yellow);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--upnd-red), var(--upnd-yellow));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bold;
+            border: 3px solid white;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-subtext {
+            font-size: 0.9rem;
+            color: var(--upnd-yellow);
+            font-weight: 600;
+        }
+
+        .upnd-badge {
+            background-color: var(--upnd-green);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid var(--upnd-yellow);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .nav-links a.active {
+            color: var(--upnd-yellow);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: var(--upnd-yellow);
+            bottom: 0;
+            left: 0;
+            border-radius: 3px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 200px 0 150px;
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.9)), 
+                        url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, var(--upnd-red) 33%, var(--upnd-green) 33%, var(--upnd-green) 66%, var(--upnd-yellow) 66%);
+            animation: colorSlide 10s infinite linear;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            color: var(--upnd-yellow);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+            line-height: 1.2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: white;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-tagline {
+            font-size: 1.4rem;
+            margin-bottom: 50px;
+            line-height: 1.7;
+            color: #EEE;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1.6s ease-out;
+        }
+
+        /* Counter Section */
+        .counter-section {
+            background: linear-gradient(135deg, var(--upnd-green) 0%, #00662B 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .counter-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--upnd-yellow);
+        }
+
+        .counters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .counter-item {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .counter-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--upnd-yellow);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .counter-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--upnd-yellow);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .counter-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 8px solid var(--upnd-green);
+            position: relative;
+        }
+
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            border: 3px solid var(--upnd-red);
+            border-radius: 25px;
+            z-index: -1;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.8s ease;
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text h3 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: var(--upnd-yellow);
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .personal-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: var(--transition);
+            border-left: 4px solid var(--upnd-red);
+        }
+
+        .info-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .info-icon {
+            background: linear-gradient(45deg, var(--upnd-red), var(--upnd-yellow));
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .info-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--upnd-yellow);
+        }
+
+        /* Vision Section */
+        .vision-section {
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)), 
+                        url('images/day.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .vision-card {
+            background: rgba(227, 30, 36, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--upnd-yellow);
+        }
+
+        .vision-card:hover {
+            transform: translateY(-15px);
+            background: rgba(227, 30, 36, 0.25);
+            border-color: var(--upnd-yellow);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .vision-icon {
+            font-size: 4rem;
+            color: var(--upnd-yellow);
+            margin-bottom: 25px;
+        }
+
+        .vision-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .vision-card p {
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #DDD;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+        }
+
+        .gallery-section .section-title {
+            color: var(--upnd-red);
+        }
+
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 25px;
+            background: white;
+            border: 2px solid var(--upnd-green);
+            border-radius: 50px;
+            color: var(--upnd-green);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--upnd-green);
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(227, 30, 36, 0.9), transparent);
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials */
+        .testimonial-section {
+            background: linear-gradient(135deg, var(--upnd-green) 0%, #00662B 100%);
+        }
+
+        .testimonial-slider {
+            max-width: 900px;
+            margin: 60px auto 0;
+        }
+
+        .testimonial-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 25px;
+            line-height: 1.7;
+            color: white;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--upnd-yellow);
+        }
+
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            color: var(--upnd-yellow);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            color: #DDD;
+            font-size: 1rem;
+        }
+
+        /* News Section */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .news-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--upnd-yellow);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .news-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .news-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .news-card:hover .news-img img {
+            transform: scale(1.1);
+        }
+
+        .news-content {
+            padding: 30px;
+        }
+
+        .news-date {
+            display: inline-block;
+            background: var(--upnd-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .news-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--upnd-yellow);
+        }
+
+        .news-excerpt {
+            color: #DDD;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)), 
+                        url('images/595727063_122202652046313159_3029842208271374088_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border-left: 5px solid var(--upnd-yellow);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            background: linear-gradient(45deg, var(--upnd-red), var(--upnd-yellow));
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--upnd-yellow);
+        }
+
+        .contact-details p {
+            color: #DDD;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--upnd-yellow);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--upnd-yellow);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 80px 0 30px;
+            border-top: 5px solid var(--upnd-yellow);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--upnd-yellow);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-about p {
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #BBB;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: var(--upnd-red);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--upnd-yellow);
+            transform: translateY(-5px);
+            color: var(--dark-bg);
+        }
+
+        .footer-heading {
+            font-size: 1.6rem;
+            color: var(--upnd-yellow);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--upnd-red);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-links li {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #BBB;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--upnd-yellow);
+            padding-left: 10px;
+        }
+
+        .footer-contact li {
+            list-style: none;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .footer-contact i {
+            color: var(--upnd-red);
+            font-size: 1.3rem;
+            margin-top: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 1rem;
+        }
+
+        .copyright p {
+            margin-bottom: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes colorSlide {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 300px 0%;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .personal-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(227, 30, 36, 0.98);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                z-index: 1000;
+                backdrop-filter: blur(10px);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 180px 0 120px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .counter-number {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--upnd-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            border: 3px solid var(--upnd-yellow);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--upnd-green);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">NN</div>
+                <div>
+                    <div class="logo-text">Nawa Nawa</div>
+                    <div class="logo-subtext">For Matero 2026</div>
+                </div>
+            </div>
+            
+            <div class="upnd-badge">
+                <i class="fas fa-handshake"></i> UPND Aspiring Candidate
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#vision"><i class="fas fa-eye"></i> Vision</a>
+                <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+                <a href="#news"><i class="fas fa-newspaper"></i> News</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1 class="animate__animated animate__fadeInUp">Hon. Nawa Nawa</h1>
+            <h2 class="animate__animated animate__fadeInUp">UPND Aspiring Candidate for Matero 2026</h2>
+            <p class="hero-tagline animate__animated animate__fadeInUp">A passionate leader committed to transforming Matero. Envisioning a constituency with better jobs, quality healthcare, improved infrastructure, and empowered youth.</p>
+            <div class="hero-btns">
+                <a href="#vision" class="btn animate__animated animate__fadeInUp"><i class="fas fa-bullhorn"></i> My Vision for Matero</a>
+                <a href="#contact" class="btn btn-secondary animate__animated animate__fadeInUp"><i class="fas fa-hands-helping"></i> Join the Movement</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <h2 class="section-title">Our Impact in Matero</h2>
+            <div class="counters">
+                <div class="counter-item">
+                    <div class="counter-number" data-count="7">0K</div>
+                    <div class="counter-text">Facebook Followers</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="50">0+</div>
+                    <div class="counter-text">Community Events</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="12">0+</div>
+                    <div class="counter-text">Projects Initiated</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="2026">0</div>
+                    <div class="counter-text">Year of Transformation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <h2 class="section-title">About Nawa Nawa</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/profile.jpg" alt="Nawa Nawa">
+                </div>
+                <div class="about-text">
+                    <h3>Dedicated Leader for Matero</h3>
+                    <p>Hon. Nawa Nawa, also known as "Ba Chair", is a passionate leader committed to transforming Matero. Born and raised in Lusaka, he understands the challenges and opportunities within the constituency.</p>
+                    <p>With a background in accountancy from ZICA and local business experience, Nawa Nawa brings both professional expertise and community understanding to his vision for Matero.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Lusaka, Zambia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Birthday</h4>
+                                <p>September 15, 1988</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Status</h4>
+                                <p>Married since September 1, 2019</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Education</h4>
+                                <p>ZICA, Kamwala High School</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn" style="margin-top: 30px;"><i class="fas fa-handshake"></i> Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vision Section -->
+    <section class="vision-section section-padding" id="vision">
+        <div class="container">
+            <h2 class="section-title">My Vision for Matero</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Better Jobs & Economic Growth</h3>
+                    <p>Creating sustainable employment opportunities through local business support, vocational training, and attracting investment to Matero. Empowering entrepreneurs and creating a thriving local economy.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Quality Healthcare for All</h3>
+                    <p>Improving healthcare facilities and access to medical services for all residents of Matero, with special focus on maternal and child health, and preventive care programs.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Modern Infrastructure</h3>
+                    <p>Upgrading roads, drainage systems, water supply, and electricity to enhance quality of life and economic activity in Matero. Ensuring every community has basic amenities.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Empowered Youth & Education</h3>
+                    <p>Providing skills training, educational support, and recreational facilities to unlock the potential of Matero's youth population. Investing in the next generation of leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery & Events</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+                <button class="filter-btn" data-filter="campaign">Campaign</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="community">
+                    <img src="images/chawama.jpg" alt="Community Meeting">
+                    <div class="gallery-overlay">
+                        <h3>Community Meeting</h3>
+                        <p>Engaging with Matero residents</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campaign">
+                    <img src="images/chawama1.jpg" alt="Campaign Rally">
+                    <div class="gallery-overlay">
+                        <h3>Campaign Rally</h3>
+                        <p>Nawa Nawa for Matero 2026</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <img src="images/road.jpg" alt="Infrastructure Project">
+                    <div class="gallery-overlay">
+                        <h3>Road Rehabilitation</h3>
+                        <p>Improving Matero's infrastructure</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <img src="images/ball.jpg" alt="Youth Empowerment">
+                    <div class="gallery-overlay">
+                        <h3>Youth Football Tournament</h3>
+                        <p>Supporting local talent</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campaign">
+                    <img src="images/interview.jpg" alt="Media Engagement">
+                    <div class="gallery-overlay">
+                        <h3>Media Interview</h3>
+                        <p>Sharing the vision for Matero</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News Section -->
+    <section class="section-padding" id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News & Updates</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="images/police.jpg" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">December 15, 2023</span>
+                        <h3 class="news-title">Chunga Police Post Commissioned</h3>
+                        <p class="news-excerpt">Joined Lusaka Province Minister Sheal Mulyata to commission the newly constructed Chunga Police Post, enhancing community safety in Matero.</p>
+                        <a href="#" class="btn" style="padding: 10px 25px; font-size: 1rem;">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="images/football.jpg" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">November 28, 2023</span>
+                        <h3 class="news-title">Youth Football Tournament Success</h3>
+                        <p class="news-excerpt">Supported and attended a local football final at Chipanda Playing Field, promoting youth engagement and talent development in Matero.</p>
+                        <a href="#" class="btn" style="padding: 10px 25px; font-size: 1rem;">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="images/cleaning.jpg" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">October 20, 2023</span>
+                        <h3 class="news-title">Cleaning Exercise with Zambia Albinism Alliance</h3>
+                        <p class="news-excerpt">Joined hands with the Zambia Albinism Alliance for a community cleaning exercise at Matero Police Station, promoting cleanliness and unity.</p>
+                        <a href="#" class="btn" style="padding: 10px 25px; font-size: 1rem;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Campaign Office</h3>
+                            <p>Matero Constituency<br>Lusaka, Zambia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Contact Number</h3>
+                            <p>+260 97X XXX XXX<br>Mon - Fri, 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <p>contact@nawanawa2026.org<br>info@nawanawa2026.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <p>Follow us on Facebook, Twitter, and Instagram for the latest updates and campaign news.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="color: var(--upnd-yellow); margin-bottom: 30px; font-size: 1.8rem;">Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i> Nawa Nawa
+                    </div>
+                    <p>A passionate leader committed to transforming Matero. As a 2026 UPND aspiring candidate, he envisions a constituency with better jobs, quality healthcare, improved infrastructure, and empowered youth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#vision"><i class="fas fa-chevron-right"></i> Vision</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#news"><i class="fas fa-chevron-right"></i> News</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Campaign Office</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>Matero Constituency<br>Lusaka, Zambia</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+260 97X XXX XXX</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>contact@nawanawa2026.org</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Nawa Nawa for Matero 2026. All Rights Reserved. | "Together we can build a better Matero"</p>
+                <p>UPND Aspiring Candidate for Matero Constituency</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                document.getElementById('mobileMenuBtn').querySelector('i').classList.remove('fa-times');
+                document.getElementById('mobileMenuBtn').querySelector('i').classList.add('fa-bars');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                backToTop.classList.add('active');
+            } else {
+                header.classList.remove('scrolled');
+                backToTop.classList.remove('active');
+            }
+            
+            // Update active nav link based on scroll position
+            updateActiveNavLink();
+        });
+        
+        // Back to Top Button
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Animated Counter
+        function animateCounter() {
+            const counters = document.querySelectorAll('.counter-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText.replace('K', '000').replace('+', '');
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment).toLocaleString();
+                    if (counter.getAttribute('data-count').includes('K')) {
+                        counter.innerText = (Math.ceil(count + increment) / 1000) + 'K';
+                    }
+                    if (counter.getAttribute('data-count').includes('+')) {
+                        counter.innerText = Math.ceil(count + increment) + '+';
+                    }
+                    setTimeout(() => animateCounter(), 1);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                    if (counter.getAttribute('data-count').includes('K')) {
+                        counter.innerText = (target / 1000) + 'K';
+                    }
+                    if (counter.getAttribute('data-count').includes('+')) {
+                        counter.innerText = target + '+';
+                    }
+                }
+            });
+        }
+        
+        // Start counter when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(document.querySelector('.counter-section'));
+        
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Simple validation
+            if (name && email && subject) {
+                // In a real application, you would send this data to a server
+                alert(`Thank you, ${name}! Your message has been received. We will contact you at ${email} soon.`);
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+        
+        // Update active nav link based on scroll position
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelector(`.nav-links a[href="#${sectionId}"]`).classList.add('active');
+                } else {
+                    document.querySelector(`.nav-links a[href="#${sectionId}"]`).classList.remove('active');
+                }
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize counters with initial values
+            document.querySelectorAll('.counter-number').forEach(counter => {
+                const target = counter.getAttribute('data-count');
+                if (target.includes('K')) {
+                    counter.innerText = '0K';
+                } else if (target.includes('+')) {
+                    counter.innerText = '0+';
+                } else {
+                    counter.innerText = '0';
+                }
+            });
+            
+            // Set current year in footer
+            document.querySelector('.copyright p').innerHTML = `&copy; ${new Date().getFullYear()} Nawa Nawa for Matero 2026. All Rights Reserved. | "Together we can build a better Matero"`;
+        });
+    </script>
+</body>
+</html>
